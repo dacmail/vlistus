@@ -1,1 +1,1 @@
-Playlist
+<?= $playlist->name; ?>

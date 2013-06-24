@@ -5,26 +5,49 @@ class Playlists extends CI_Controller {
 		$data['main_content'] = 'home';
 		$this->load->view('includes/template', $data);
 	}
-	public function view($slug) {
-		$data['main_content'] = 'playlist';
-		$this->load->view('includes/template', $data);
+	public function view($slug, $token) {
+		$playlist = Playlist::find_by_slug($slug);
+		if (!empty($playlist)) :
+			$data['playlist'] = $playlist;
+			if (empty($token)) : //play url
+				$data['main_content'] = 'playlist';
+			elseif ($token == $playlist->collab) : //collaboration url
+				$data['main_content'] = 'collaboration';
+			elseif ($token == $playlist->admin) : //administration url
+				$data['main_content'] = 'administration';
+			endif;
+			$this->load->view('includes/template', $data);
+		else :
+			show_404();
+		endif;
 	}
 	public function create() {
-		$slug = url_title(convert_accented_characters($this->input->post('name')));
-		$i=1;
-		$playlist = Playlist::find_by_slug($slug);
-		$gen_slug = $slug;
-		while (!empty($playlist)) :
-				$i++;
-				$gen_slug = $slug . '-' . $i;
-				$playlist = Playlist::find_by_slug($gen_slug);
+		$slug = url_title(convert_accented_characters(strtolower($this->input->post('name'))));
+		if (!empty($slug)) :
+			$i=1;
+			$playlist = Playlist::find_by_slug($slug);
+			$gen_slug = $slug;
+			while (!empty($playlist)) :
+					$i++;
+					$gen_slug = $slug . '-' . $i;
+					$playlist = Playlist::find_by_slug($gen_slug);
 
-		endwhile;
-		$playlist = Playlist::create(array(
-					'name' => $this->input->post('name'),
-					'slug' => $gen_slug,
-					'collab' => substr(md5(rand()),0,5),
-					'admin' => substr(md5(rand()),0,15)
-			));
+			endwhile;
+			$playlist = Playlist::create(array(
+						'name' => $this->input->post('name'),
+						'slug' => $gen_slug,
+						'collab' => substr(md5(rand()),0,5),
+						'admin' => substr(md5(rand()),0,15)
+				));
+			if ($playlist->is_valid()) :
+				redirect(site_url($playlist->slug . '/' . $playlist->admin));
+			else :
+				//Unknow error
+				redirect(site_url());
+			endif;
+		else :
+			//Empty name/slug
+			redirect(site_url());
+		endif;
 	}
 }
