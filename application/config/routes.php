@@ -38,9 +38,10 @@
 |
 */
 
-$route['default_controller'] = "playlist";
+$route['default_controller'] = "playlists";
 $route['404_override'] = '';
-$route['(:any)'] = "playlist/view/$1";
+$route['playlists/create'] = "playlists/create";
+$route['(:any)'] = "playlists/view/$1";
 
 
 

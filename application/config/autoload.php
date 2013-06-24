@@ -53,7 +53,7 @@ $autoload['packages'] = array();
 */
 
 $autoload['libraries'] = array('database');
-$autoload['sparks'] = array('php-activerecord/0.0.2');
+
 
 
 
@@ -66,7 +66,7 @@ $autoload['sparks'] = array('php-activerecord/0.0.2');
 |	$autoload['helper'] = array('url', 'file');
 */
 
-$autoload['helper'] = array();
+$autoload['helper'] = array('url', 'text');
 
 
 /*
@@ -112,6 +112,8 @@ $autoload['language'] = array();
 */
 
 $autoload['model'] = array();
+
+$autoload['sparks'] = array('php-activerecord/0.0.2');
 
 
 /* End of file autoload.php */
