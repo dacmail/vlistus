@@ -38,8 +38,10 @@
 |
 */
 
-$route['default_controller'] = "welcome";
+$route['default_controller'] = "playlist";
 $route['404_override'] = '';
+$route['(:any)'] = "playlist/view/$1";
+
 
 
 /* End of file routes.php */
