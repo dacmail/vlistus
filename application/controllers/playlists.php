@@ -31,7 +31,6 @@ class Playlists extends CI_Controller {
 					$i++;
 					$gen_slug = $slug . '-' . $i;
 					$playlist = Playlist::find_by_slug($gen_slug);
-
 			endwhile;
 			$playlist = Playlist::create(array(
 						'name' => $this->input->post('name'),
@@ -42,11 +41,11 @@ class Playlists extends CI_Controller {
 			if ($playlist->is_valid()) :
 				redirect(site_url($playlist->slug . '/' . $playlist->admin));
 			else :
-				//Unknow error
+				$this->session->set_flashdata('message', 'Sorry, the playlist cannot be created, try again.');
 				redirect(site_url());
 			endif;
 		else :
-			//Empty name/slug
+			$this->session->set_flashdata('message', 'You have to enter a playlist name.');
 			redirect(site_url());
 		endif;
 	}
