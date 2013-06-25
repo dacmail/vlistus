@@ -6,9 +6,18 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="robots" content="index, follow" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-    <script src="default.js"></script>
-    <link rel="stylesheet" href="styles.css" />
+
+	<script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="<?= base_url('osmplayer/jquery-ui/dark-hive/jquery-ui.css') ?>">
+
+	<script type="text/javascript" src="<?= base_url('osmplayer/bin/osmplayer.compressed.js') ?>"></script>
+
+
+
+	<link rel="stylesheet" href="<?= base_url('osmplayer/templates/default/css/osmplayer_default.css') ?>">
+	<script type="text/javascript" src="<?= base_url('osmplayer/templates/default/osmplayer.default.js') ?>"></script>
+
 </head>
 
 <body>

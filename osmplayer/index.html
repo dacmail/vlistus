@@ -1,0 +1,46 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>VLISTUS.com | Create and share your collaborative video playlists</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Include the core jQuery and jQuery UI -->
+    <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+
+    <!-- Include the core media player JavaScript. -->
+    <script type="text/javascript" src="http://localhost/vlistus/osmplayer/bin/osmplayer.compressed.js"></script>
+
+    <!-- Include the DarkHive ThemeRoller jQuery UI theme. -->
+    <link rel="stylesheet" href="http://localhost/vlistus/osmplayer/jquery-ui/dark-hive/jquery-ui.css">
+
+    <!-- Include the Default template CSS and JavaScript. -->
+    <link rel="stylesheet" href="http://localhost/vlistus/osmplayer/templates/default/css/osmplayer_default.css">
+    <link type="text/javascript" href="http://localhost/vlistus/osmplayer/templates/default/osmplayer.default.js">
+
+</head>
+
+<body>
+
+
+<div id="message-area"></div>
+
+spanish
+<script type="text/javascript">
+  $(function() {
+    $("#osmplayer").osmplayer({
+      width: '100%',
+      height: '650px',
+      playlist: 'http://gdata.youtube.com/feeds/api/videos'
+    });
+  });
+</script>
+
+    <div id="osmplayer"></div>
+</body>
+</html>
