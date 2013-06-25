@@ -3,7 +3,7 @@
 <script type="text/javascript">
   $(function() {
     $("#osmplayer").osmplayer({
-      playlist: "<?= base_url('playlist.xml') ?>",
+      playlist: "<?= site_url('playlists/xml/' . $playlist->id . '.xml') ?>",
       height: '500px'
     });
   });

@@ -49,4 +49,13 @@ class Playlists extends CI_Controller {
 			redirect(site_url());
 		endif;
 	}
+	public function xml($id) {
+		$playlist = Playlist::find($id);
+		if (!empty($playlist)) :
+			$data['playlist'] = $playlist;
+			$this->load->view('playlistxml', $data);
+		else :
+			show_404();
+		endif;
+	}
 }
