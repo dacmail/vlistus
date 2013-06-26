@@ -49,6 +49,41 @@ class Playlists extends CI_Controller {
 			redirect(site_url());
 		endif;
 	}
+	public function update() {
+		$config = array(
+               array(
+                     'field'   => 'name',
+                     'label'   => 'Playlist name',
+                     'rules'   => 'required'
+                  ),
+               array(
+                     'field'   => 'email',
+                     'label'   => 'Owner email',
+                     'rules'   => 'valid_email'
+                  )
+            );
+			$post_data = $this->input->post(NULL, TRUE);
+			$playlist = Playlist::find($post_data['list']);
+			if ((!empty($playlist)) && ($playlist->admin == $post_data['admin'])) :
+				$this->form_validation->set_rules($config);
+				if ($this->form_validation->run() == FALSE) :
+					$this->session->set_flashdata('message', validation_errors());
+					redirect(site_url($playlist->slug . '/' . $playlist->admin));
+				else :
+					$playlist->name = $post_data['name'];
+					$playlist->description = $post_data['description'];
+					$playlist->email = $post_data['email'];
+					$playlist->private = isset($post_data['private']);
+					$playlist->save();
+					$this->session->set_flashdata('message', 'Playlist saved');
+					redirect(site_url($playlist->slug . '/' . $playlist->admin));
+				endif;
+			else :
+				$this->session->set_flashdata('message', 'The playlist doesn\'t exists or the admin token is not valid');
+				redirect(site_url());
+			endif;
+
+	}
 	public function xml($id) {
 		$playlist = Playlist::find($id);
 		if (!empty($playlist)) :
