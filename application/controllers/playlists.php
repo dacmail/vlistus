@@ -2,8 +2,7 @@
 
 class Playlists extends CI_Controller {
 	public function index() {
-		$data['main_content'] = 'home';
-		$this->load->view('includes/template', $data);
+		$this->load->view('home');
 	}
 	public function view($slug, $token) {
 		$playlist = Playlist::find_by_slug($slug);

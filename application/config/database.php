@@ -49,9 +49,9 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = '127.0.0.1';
-$db['default']['username'] = 'root';
-$db['default']['password'] = 'dac123';
-$db['default']['database'] = 'vlistus';
+$db['default']['username'] = 'vlistus';
+$db['default']['password'] = 'xDbYL+oY4hia';
+$db['default']['database'] = 'vlistus_main';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
