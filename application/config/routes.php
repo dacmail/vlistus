@@ -44,6 +44,7 @@ $route['playlists/create'] = "playlists/create";
 $route['playlists/update'] = "playlists/update";
 $route['multimedia/create'] = "multimedia/create";
 $route['playlists/xml/(:num).xml'] = "playlists/xml/$1";
+$route['services/get_name.json'] = "services/get_name";
 $route['(:any)'] = "playlists/view/$1/$2";
 
 

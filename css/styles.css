@@ -48,7 +48,7 @@ a {
 	.home #header .logo {
 		display: block;
 		width: 16%;
-		margin:50px auto;
+		margin:40px auto;
 	}
 		.home #header .logo img {
 			width: 100%;
@@ -71,7 +71,7 @@ a {
 .home #create {
 	width: 100%;
 	max-width: 980px;
-	margin:50px auto;
+	margin:40px auto;
 	font-size: 40px;
 	color:#FF444B;
 }
@@ -93,6 +93,7 @@ a {
 		float: left;
 		margin-right:10px;
 		width: 555px;
+		margin-bottom:20px;
 	}
 	.home #submit {
 		float:left;
@@ -108,11 +109,19 @@ a {
 		text-transform: lowercase;
 		width: 145px;
 	}
+	.home #available {
+		display: block;
+		text-align: center;
+		font-size: 15px;
+		color:#999999;
+		clear: both;
+		height:15px;
+	}
 .home #steps {
 	width: 100%;
 	max-width: 980px;
-	margin:100px auto;
-	padding-top:100px;
+	margin:90px auto;
+	padding-top:90px;
 	border-top:1px solid #E5E5E5;
 
 }
@@ -160,8 +169,14 @@ a {
 	width: 100%;
 	background: #fff;
 	border-top:1px solid #E5E5E5;
-	padding:20px 0px;
+
 	transition: all 0.1s linear;
 }
+	.home #footer .wrap {
+		transition: all 0.1s linear;
+		padding:20px 0px;
+		box-sizing:border-box;
+		-moz-box-sizing:border-box;
+	}
 	.home #footer .copy {float:right;}
-	.home #footer:hover {padding:30px 0px;}
+	.home #footer:hover .wrap {padding:30px 10px; }

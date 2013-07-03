@@ -22,8 +22,9 @@
 	<section id="create" class="clearfix">
 		<form method="post" action="<?= site_url('playlists/create'); ?>">
 			<label for="name">vlistus.com/</label>
-			<input type="text" id="name" placeholder="playlist name" name="name" />
+			<input type="text" autocomplete="off" data-url="<?= site_url('services/get_name.json') ?>" id="name" placeholder="playlist name" name="name" />
 			<input type="submit" id="submit" value="Create playlist" />
+			<span id="available"></span>
 		</form>
 	</section>
 	<section id="steps" class="clearfix">
