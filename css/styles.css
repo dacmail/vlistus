@@ -25,7 +25,15 @@
 body {
 	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 	font-weight: 100;
+	color:#999999;
+	font-size: 15px;
+	padding-bottom:60px;
 }
+a {
+	text-decoration: none;
+	color:#FF444A;
+}
+	a:hover {text-decoration: underline;}
 .wrap {
 	width: 100%;
 	max-width: 980px;
@@ -90,7 +98,7 @@ body {
 		float:left;
 		height: 60px;
 		line-height: 60px;
-		background: #FF434A;
+		background: #FF444A;
 		border:0px;
 		font-size: 21px;
 		color:#fff;
@@ -100,3 +108,60 @@ body {
 		text-transform: lowercase;
 		width: 145px;
 	}
+.home #steps {
+	width: 100%;
+	max-width: 980px;
+	margin:100px auto;
+	padding-top:100px;
+	border-top:1px solid #E5E5E5;
+
+}
+	.home #steps .step {
+		float:left;
+		width: 33%;
+		text-align: center;
+		box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		padding:0px 3%;
+	}
+		.home #steps .step .number {
+			display: block;
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			background: #FF444B;
+			margin:0px auto 70px auto;
+			text-align: center;
+			line-height: 100px;
+			color:#fff;
+			font-size:50px;
+			font-weight: bold;
+			position: relative;
+		}
+		.home #steps .step .number:before {
+			display: block;
+			width: 100px;
+			height: 20px;
+			border-radius: 50%;
+			background: transparent;
+			box-shadow:0px 120px 22px -7px #e5e5e5;
+			content: " ";
+			display: block;
+			position: absolute;
+		}
+		.home #steps .step h2 {
+			font-size: 40px;
+			color:#FF444B;
+			margin-bottom:10px;
+		}
+.home #footer {
+	position: fixed;
+	bottom:0px;
+	width: 100%;
+	background: #fff;
+	border-top:1px solid #E5E5E5;
+	padding:20px 0px;
+	transition: all 0.1s linear;
+}
+	.home #footer .copy {float:right;}
+	.home #footer:hover {padding:30px 0px;}
