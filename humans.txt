@@ -1,0 +1,16 @@
+/* TEAM */
+Developer: Daniel Aguilar Castro
+Contact: dacmail [at] gmail.com
+Twitter: @dacmail
+Location: Malaga and Huelva, Spain.
+
+Web designer: Ruben Illescas Urrea
+Contact: rubenpoulos [at] gmail.com
+Twitter: @rubenpoulos
+Location: Malaga and Valencia, Spain.
+
+
+/* SITE */
+Last update: 2013/07/03
+Standards: HTML5, CSS3, PHP, JS
+Software: CodeIgniter, Illustrator, Fireworks and Sublime Text

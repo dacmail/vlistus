@@ -39,6 +39,11 @@ a {
 	max-width: 980px;
 	margin:0px auto;
 }
+#message-area {
+	color:#FF444A;
+	text-align: center;
+	margin:20px auto;
+}
 .home #header {
 	padding:1px;
 	width: 100%;

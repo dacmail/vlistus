@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>VLISTUS.com | Create and share your collaborative video playlists</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -18,7 +19,7 @@
 			<h2>vlistus lets you create, share and enjoy collaborative video playlists. Easy and beautiful</h2>
 		</div>
 	</header>
-
+	<div id="message-area"><?= $this->session->flashdata('message'); ?></div>
 	<section id="create" class="clearfix">
 		<form method="post" action="<?= site_url('playlists/create'); ?>">
 			<label for="name">vlistus.com/</label>
