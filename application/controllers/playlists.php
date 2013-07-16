@@ -38,6 +38,7 @@ class Playlists extends CI_Controller {
 						'admin' => substr(md5(rand()),0,15)
 				));
 			if ($playlist->is_valid()) :
+				$this->session->set_flashdata('justcreated', true);
 				redirect(site_url($playlist->slug . '/' . $playlist->admin));
 			else :
 				$this->session->set_flashdata('message', 'Sorry, the playlist cannot be created, try again.');
