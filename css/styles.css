@@ -56,6 +56,7 @@ body {
 	font-size: 15px;
 	padding-bottom:60px;
 }
+body.play {padding:0px;}
 a {
 	text-decoration: none;
 	color:#2EB3D2;
@@ -106,6 +107,10 @@ a {
 		color:#999999;
 		font-size: 25px;
 		font-weight: 100;
+	}
+	#presentation .url {
+		font-size:30px;
+		margin:20px auto;
 	}
 	#presentation .subtitle.desc {
 		font-size:20px;
@@ -202,6 +207,46 @@ a {
 			margin:5px;
 			font-style:italic;
 			color:#CCCCCC;
+		}
+		#video_urls {
+			font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+			border:1px solid #E5E5E5;
+			font-size: 40px;
+			padding:10px;
+			line-height: 38px;
+			font-weight: 100;
+			height: 38px;
+			float: left;
+			margin-right:10px;
+			width: 803px;
+			margin-bottom:20px;
+		}
+		#video_submit {
+			float:left;
+			height: 60px;
+			line-height: 60px;
+			background: #2EB3D2;
+			border:0px;
+			font-size: 21px;
+			color:#fff;
+			padding:0px 10px;
+			font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+			font-weight: 100;
+			text-transform: lowercase;
+			width: 145px;
+		}
+		#description {
+			margin:40px auto;
+			width: 640px;
+		}
+		#sharer {
+			border-top:1px solid #E5E5E5;
+			border-bottom:1px solid #E5E5E5;
+			width:315px;
+			padding:10px 50px 10px 60px;
+			margin:10px auto 30px auto;
+			height:20px;
+			overflow: hidden;
 		}
 .home #header {
 	padding:1px;
@@ -329,6 +374,7 @@ a {
 			color:#FF444B;
 			margin-bottom:10px;
 		}
+
 .overlay {
 	position: fixed;
 	top:0px;
@@ -385,6 +431,7 @@ a {
 	}
 #footer a {color:#FF444A;}
 #footer {
+	z-index: 100;
 	position: fixed;
 	bottom:0px;
 	width: 100%;
@@ -392,6 +439,10 @@ a {
 	border-top:1px solid #E5E5E5;
 
 	transition: all 0.1s linear;
+}
+.play #footer {
+	position: relative;
+	bottom:auto;
 }
 	#footer .wrap {
 		transition: all 0.1s linear;

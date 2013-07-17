@@ -9,6 +9,7 @@ class Playlists extends CI_Controller {
 		if (!empty($playlist)) :
 			$data['playlist'] = $playlist;
 			if (empty($token)) : //play url
+				$data['class'] = "play";
 				$data['main_content'] = 'playlist';
 			elseif ($token == $playlist->collab) : //collaboration url
 				$data['main_content'] = 'collaboration';
