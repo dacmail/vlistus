@@ -1,6 +1,7 @@
 <section id="container">
-	<? if ($this->session->flashdata('justcreated')== true) : ?>
+	<? if ($this->session->flashdata('justcreated') == true) : ?>
 		<section id="presentation">
+			<i class="icon-heart"></i>
 			<h1 class="title">Congratulations!</h1>
 			<h2 class="subtitle">Your list has been created, this are your URLs:</h2>
 		</section>
@@ -11,9 +12,9 @@
 		</section>
 	<? endif; ?>
 	<section id="urls">
-		<p class="url"><span class="icon-admin url-type">Admin</span> <a href="<?= site_url($playlist->slug . '/' . $playlist->admin); ?>" target="_blank"><?= ellipsize(site_url($playlist->slug . '/' . $playlist->admin),50, .5); ?></a> <a href="#" class="button">Copy</a></p>
-		<p class="url"><span class="icon-collab url-type">Collab</span> <a href="<?= site_url($playlist->slug . '/' . $playlist->collab); ?>" target="_blank"><?= ellipsize(site_url($playlist->slug . '/' . $playlist->collab),50, .5); ?> <a href="#" class="button">Copy</a></p>
-		<p class="url"><span class="icon-play url-type">Play</span> <a href="<?= site_url($playlist->slug); ?>" target="_blank"><?= ellipsize(site_url($playlist->slug),50, .5); ?> <a href="#" class="button">Copy</a></p>
+		<p class="url"><span class="icon-admin url-type">Admin</span> <a href="<?= site_url($playlist->slug . '/' . $playlist->admin); ?>" target="_blank"><?= ellipsize(site_url($playlist->slug . '/' . $playlist->admin),50, .5); ?></a> <a href="#" class="admin-share button">Share</a></p>
+		<p class="url"><span class="icon-collab url-type">Collab</span> <a href="<?= site_url($playlist->slug . '/' . $playlist->collab); ?>" target="_blank"><?= ellipsize(site_url($playlist->slug . '/' . $playlist->collab),50, .5); ?> <a href="#" class="collab-share button">Share</a></p>
+		<p class="url"><span class="icon-play url-type">Play</span> <a href="<?= site_url($playlist->slug); ?>" target="_blank"><?= ellipsize(site_url($playlist->slug),50, .5); ?> <a href="#" class="play-share button">Share</a></p>
 	</section>
 	<section id="preferences">
 		<form method="post" action="<?= site_url('playlists/update') ?>">
@@ -26,5 +27,35 @@
 			<p><input type="submit" value="Save changes"></p>
 		</form>
 	</section>
-
+	<section class="popup" id="admin-share">
+		<h2>Share your ADMIN URL</h2>
+		<input type="text" value="<?= site_url($playlist->slug . '/' . $playlist->admin) ?>">
+		<ul>
+			<li><a href="#">Twitter</a></li>
+			<li><a href="#">Facebook</a></li>
+			<li><a href="#">Google +</a></li>
+			<li><a href="#">Email</a></li>
+		</ul>
+	</section>
+	<section class="popup" id="collab-share">
+		<h2>Share your COLLAB URL</h2>
+		<input type="text" value="<?= site_url($playlist->slug . '/' . $playlist->collab) ?>">
+		<ul>
+			<li><a href="#">Twitter</a></li>
+			<li><a href="#">Facebook</a></li>
+			<li><a href="#">Google +</a></li>
+			<li><a href="#">Email</a></li>
+		</ul>
+	</section>
+	<section class="popup" id="play-share">
+		<h2>Share your PLAY URL</h2>
+		<input type="text" value="<?= site_url($playlist->slug) ?>">
+		<ul>
+			<li><a href="#">Twitter</a></li>
+			<li><a href="#">Facebook</a></li>
+			<li><a href="#">Google +</a></li>
+			<li><a href="#">Email</a></li>
+		</ul>
+	</section>
+	<div class="overlay"></div>
 </section>

@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"fa",
+				"FF444A"
+			],
+			[
 				"text-",
 				"text-align"
 			],
@@ -211,7 +215,7 @@
 			"file": "application/views/administration.php",
 			"settings":
 			{
-				"buffer_size": 2208,
+				"buffer_size": 2239,
 				"line_ending": "Unix"
 			}
 		},
@@ -219,7 +223,7 @@
 			"file": "css/styles.css",
 			"settings":
 			{
-				"buffer_size": 6754,
+				"buffer_size": 6993,
 				"line_ending": "Unix"
 			}
 		},
@@ -671,7 +675,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -679,15 +683,15 @@
 					"file": "application/views/administration.php",
 					"settings":
 					{
-						"buffer_size": 2208,
+						"buffer_size": 2239,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1036,
-								1036
+								131,
+								131
 							]
 						],
 						"settings":
@@ -750,15 +754,15 @@
 					"file": "css/styles.css",
 					"settings":
 					{
-						"buffer_size": 6754,
+						"buffer_size": 6993,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1144,
-								1144
+								2831,
+								2831
 							]
 						],
 						"settings":
@@ -811,7 +815,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 346.0,
+						"translation.y": 1786.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
