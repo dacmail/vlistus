@@ -3,9 +3,10 @@
 		<h1 class="title"><?= $playlist->name; ?></h1>
 	</section>
 	<section id="sharer">
-		<a href="https://twitter.com/share" class="twitter-share-button" data-via="vlistus">Tweet</a>
+		<a href="https://twitter.com/share" class="twitter-share-button" data-url="<?= site_url($playlist->slug); ?>" data-text="<?= $playlist->name; ?>. Check out this playlist on @vlistus">Tweet</a>
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-		<div class="g-plusone" data-href="<?= site_url($playlist->slug) ?>" data-size="medium"></div>
+
+		<div class="g-plusone" data-href="<?= site_url($playlist->slug); ?>" data-size="medium"></div>
 		<script type="text/javascript">
 		  (function() {
 		    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;

@@ -113,8 +113,11 @@ a {
 		margin:20px auto;
 	}
 	#presentation .subtitle.desc {
-		font-size:20px;
-		width: 640px;
+		font-size:15px;
+		line-height: 25px;
+		font-weight: 200;
+		width: 100%;
+		max-width: 640px;
 		margin:10px auto;
 	}
 	#urls {
@@ -160,28 +163,33 @@ a {
 			text-align: center;
 		}
 	#preferences {
+		font-weight: 200;
 		width: 100%;
 		max-width: 640px;
+		padding:10px;
 		margin:0px auto 150px auto;
+		box-sizing:border-box;
+		-moz-box-sizing:border-box;
 	}
 		#preferences p {margin-bottom:30px;}
 		#preferences label {
 			display: block;
 			color:#333333;
 			font-size: 20px;
-			margin:0px 0px 10px 5px;
+			margin:0px 0px 10px 10px;
+			font-weight: 200;
 		}
 		#preferences input[type=text], #preferences textarea {
 			width: 100%;
 			border:1px solid #E5E5E5;
 			color:#999999;
 			font-size: 20px;
-			padding:5px;
+			padding:5px 10px;
 			line-height: 38px;
 			font-weight: 100;
 			height: 38px;
 			box-sizing:border-box;
-			box-sizing:border-box;
+			-moz-box-sizing:border-box;
 		}
 		#preferences textarea {
 			height:200px;
@@ -203,8 +211,19 @@ a {
 			text-transform: lowercase;
 			width: 145px;
 		}
+		input[type=checkbox] {
+			margin-top: 3px;
+			float: left;
+			margin-right: 10px;
+			margin-left: 10px;
+		}
+		.topb {
+			border-top:1px solid #E5E5E5;
+			padding-top:30px;
+			margin-top:30px;
+		}
 		.hint {
-			margin:5px;
+			margin:5px 10px;
 			font-style:italic;
 			color:#CCCCCC;
 		}
@@ -237,14 +256,18 @@ a {
 		}
 		#description {
 			margin:40px auto;
-			width: 640px;
+			max-width: 640px;
+			width: 100%;
+			line-height:25px;
+			font-weight: 200;
+			text-align: center;
 		}
 		#sharer {
 			border-top:1px solid #E5E5E5;
 			border-bottom:1px solid #E5E5E5;
 			width:315px;
-			padding:10px 50px 10px 60px;
-			margin:10px auto 30px auto;
+			padding:15px 50px 15px 60px;
+			margin:-15px auto 30px auto;
 			height:20px;
 			overflow: hidden;
 		}
@@ -291,7 +314,7 @@ a {
 		line-height: 40px;
 		padding:10px 0px;
 		margin-right:10px;
-		width: 225px;
+		width: 200px;
 	}
 	.home #name {
 		font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -302,7 +325,7 @@ a {
 		font-weight: 100;
 		height: 38px;
 		float: left;
-		margin-right:10px;
+		margin-right:20px;
 		width: 555px;
 		margin-bottom:20px;
 	}
@@ -343,6 +366,8 @@ a {
 		box-sizing:border-box;
 		-moz-box-sizing:border-box;
 		padding:0px 3%;
+		font-weight: 200;
+		line-height: 25px;
 	}
 		.home #steps .step .number {
 			display: block;
@@ -382,6 +407,7 @@ a {
 	width: 100%;
 	height: 100%;
 	z-index:100;
+	display: none;
 }
 .popup {
 	z-index:110;
@@ -443,6 +469,7 @@ a {
 .play #footer {
 	position: relative;
 	bottom:auto;
+	margin-top:150px;
 }
 	#footer .wrap {
 		transition: all 0.1s linear;
@@ -450,5 +477,28 @@ a {
 		box-sizing:border-box;
 		-moz-box-sizing:border-box;
 	}
-	#footer .copy {float:right;}
+	#footer .copy {float:right; font-weight: 200; }
 	#footer:hover .wrap {padding:30px 10px; }
+
+
+
+@media only screen and (max-width: 980px) {
+	#add_video {text-align: center;}
+	.home #name, .home #submit, #video_urls, #video_submit  {
+		width: 90%;
+		margin:10px auto;
+		float:none;
+		height:48px;
+		box-sizing:border-box;
+		-moz-box-sizing:border-box;
+	}
+	.home #submit,  #video_submit {height: 60px;}
+	#urls .url-type, #urls  a, #urls a.button {
+		display: block;
+		width: 100%;
+		float:none;
+		box-sizing:border-box;
+		-moz-box-sizing:border-box;
+	}
+	#urls a {font-size:20px;}
+}

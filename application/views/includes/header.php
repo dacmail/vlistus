@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>VLISTUS.com | Create and share your collaborative video playlists</title>
+    <title><?= isset($playlist) ? $playlist->name . ' | ' : ''; ?> VLISTUS.com | Create and share your collaborative video playlists</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="robots" content="index, follow" />
@@ -14,8 +14,6 @@
 	<script type="text/javascript" src="<?= base_url('osmplayer/templates/default/osmplayer.default.js') ?>"></script>
 	<script type='text/javascript' src="<?= base_url('js/default.js') ?>"></script>
 	<link rel="stylesheet" href="<?= base_url('css/styles.css') ?>">
-
-
 </head>
 <body class="<?= isset($class) ? $class : ''; ?>">
 	<header id="header" class="clearfix">

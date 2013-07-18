@@ -20,11 +20,11 @@
 		<form method="post" action="<?= site_url('playlists/update') ?>">
 			<input type="hidden" name="list" value="<?= $playlist->id; ?>">
 			<input type="hidden" name="admin" value="<?= $playlist->admin; ?>">
-			<p><label for="name">Playlist name:</label><input value="<?= $playlist->name; ?>" type="text" name="name"></p>
-			<p><label for="description">Playlist description:</label><textarea name="description" id=""><?= $playlist->description; ?></textarea></p>
-			<p><label for="email">Playlist owner email:</label><input type="text" name="email" value="<?= $playlist->email; ?>"> <span class="hint">We only use this email address to recover your playlist in the future</span></p>
-			<p><label for="email">Private playlist:</label><input <?= ($playlist->private ? 'checked' : ''); ?> type="checkbox" name="private"> Allow playlist to be shown in popular/latest lists</p>
-			<p><input type="submit" value="Save changes"></p>
+			<p><label for="name">Playlist name</label><input value="<?= $playlist->name; ?>" type="text" name="name"></p>
+			<p><label for="description">Playlist description</label><textarea name="description" id=""><?= $playlist->description; ?></textarea></p>
+			<p><label for="email">Playlist owner email</label><input type="text" name="email" value="<?= $playlist->email; ?>"> <span class="hint">We only use this email address to recover your playlist in the future</span></p>
+			<p><label for="email">Private playlist</label><input <?= ($playlist->private ? 'checked' : ''); ?> type="checkbox" name="private"> Allow playlist to be shown in popular/latest lists</p>
+			<p class="topb"><input type="submit" value="Save changes"></p>
 		</form>
 	</section>
 	<section class="popup" id="admin-share">
