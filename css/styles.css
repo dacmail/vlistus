@@ -102,6 +102,7 @@ a {
 		color:#333333;
 		font-size: 50px;
 		font-weight: 200;
+		word-wrap:break-word;
 	}
 	#presentation .subtitle {
 		color:#999999;
@@ -145,6 +146,7 @@ a {
 			font-size:30px;
 			width: 700px;
 			display: inline-block;
+			word-wrap: break-word;
 		}
 		#urls a.button {
 			height: 40px;
@@ -210,6 +212,7 @@ a {
 			font-weight: 100;
 			text-transform: lowercase;
 			width: 145px;
+			-webkit-appearance: none;
 		}
 		input[type=checkbox] {
 			margin-top: 3px;
@@ -253,6 +256,7 @@ a {
 			font-weight: 100;
 			text-transform: lowercase;
 			width: 145px;
+			-webkit-appearance: none;
 		}
 		#description {
 			margin:40px auto;
@@ -342,6 +346,7 @@ a {
 		font-weight: 100;
 		text-transform: lowercase;
 		width: 145px;
+		-webkit-appearance: none;
 	}
 	.home #available {
 		display: block;
@@ -501,4 +506,29 @@ a {
 		-moz-box-sizing:border-box;
 	}
 	#urls a {font-size:20px;}
+	.home #create {
+		width: 90%;
+		text-align: center;
+	}
+	.home label {float:none;}
+	.home #header h2, .home #header h1 {margin:0px 10px;}
+}
+@media only screen and (max-width: 500px) {
+	.home #header .logo {
+		width: 30%;
+	}
+	.home #header h1 {font-size: 45px;}
+	.home #steps .step {
+		width: 100%;
+		padding:0px 15%;
+		margin-bottom: 50px;
+	}
+	#footer {
+		position: relative;
+		text-align: center;
+	}
+	#footer .copy {float:none;}
+	.home #name {font-size: 30px}
+	#presentation .title {font-size:40px;}
+	.popup {width: 100%; margin-left:-50%; padding:20px 10px;}
 }
