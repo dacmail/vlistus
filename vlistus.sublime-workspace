@@ -231,7 +231,7 @@
 			"file": "css/styles.css",
 			"settings":
 			{
-				"buffer_size": 9962,
+				"buffer_size": 10659,
 				"line_ending": "Unix"
 			}
 		},
@@ -272,6 +272,22 @@
 			"settings":
 			{
 				"buffer_size": 1492,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/views/home.php",
+			"settings":
+			{
+				"buffer_size": 3074,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/views/includes/header.php",
+			"settings":
+			{
+				"buffer_size": 1526,
 				"line_ending": "Unix"
 			}
 		}
@@ -360,9 +376,9 @@
 	},
 	"file_history":
 	[
+		"/Users/dac/projects/vlistus/.git/COMMIT_EDITMSG",
 		"/Users/dac/projects/vlistus/application/views/includes/header.php",
 		"/Users/dac/projects/vlistus/application/.htaccess",
-		"/Users/dac/projects/vlistus/.git/COMMIT_EDITMSG",
 		"/Users/dac/projects/vlistus/application/views/includes/footer.php",
 		"/Users/dac/projects/vlistus/application/views/home.php",
 		"/Users/dac/projects/vlistus/application/views/playlist.php",
@@ -509,6 +525,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"450",
+			"\n",
+			"450",
+			"submit",
 			"default",
 			"450",
 			"admin",
@@ -632,11 +652,7 @@
 			"URL_TO_FIX",
 			"utf8_encode",
 			"var_dump",
-			"clean_text",
-			"arregl",
-			"arreglar",
-			"registro",
-			".counter"
+			"clean_text"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -760,7 +776,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 1.0,
-						"translation.y": 20.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -770,15 +786,15 @@
 					"file": "css/styles.css",
 					"settings":
 					{
-						"buffer_size": 9962,
+						"buffer_size": 10659,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								9254,
-								9254
+								10237,
+								10281
 							]
 						],
 						"settings":
@@ -831,7 +847,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 7654.0,
+						"translation.y": 8422.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1040,7 +1056,8 @@
 								"bh_single_quote_open",
 								"bh_single_quote_close"
 							],
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1131,8 +1148,8 @@
 						"selection":
 						[
 							[
-								552,
-								632
+								1047,
+								1047
 							]
 						],
 						"settings":
@@ -1183,6 +1200,151 @@
 							],
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 376.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "application/views/home.php",
+					"settings":
+					{
+						"buffer_size": 3074,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2721,
+								2721
+							],
+							[
+								2907,
+								2907
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 926.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "application/views/includes/header.php",
+					"settings":
+					{
+						"buffer_size": 1526,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								187,
+								187
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1235,6 +1397,18 @@
 		"selected_items":
 		[
 			[
+				"home",
+				"application/views/home.php"
+			],
+			[
+				"foot",
+				"application/views/includes/footer.php"
+			],
+			[
+				"hea",
+				"application/views/includes/header.php"
+			],
+			[
 				"sty",
 				"css/styles.css"
 			],
@@ -1251,10 +1425,6 @@
 				"application/controllers/playlists.php"
 			],
 			[
-				"home",
-				"application/views/home.php"
-			],
-			[
 				"ser",
 				"application/controllers/services.php"
 			],
@@ -1269,10 +1439,6 @@
 			[
 				"hom",
 				"application/views/home.php"
-			],
-			[
-				"hea",
-				"application/views/includes/header.php"
 			],
 			[
 				"data",
@@ -1613,10 +1779,6 @@
 			[
 				"logi",
 				"application/views/auth/login.php"
-			],
-			[
-				"foot",
-				"application/views/includes/footer.php"
 			],
 			[
 				"page",

@@ -31,30 +31,75 @@
 		<h2>Share your ADMIN URL</h2>
 		<input type="text" value="<?= site_url($playlist->slug . '/' . $playlist->admin) ?>">
 		<ul>
-			<li><a href="#">Twitter</a></li>
-			<li><a href="#">Facebook</a></li>
-			<li><a href="#">Google +</a></li>
-			<li><a href="#">Email</a></li>
+			<li><a href="#" onclick="
+						    window.open(
+						      'http://twitter.com/share?url='+encodeURIComponent(' <?= site_url($playlist->slug . '/' . $playlist->admin) ?>') + '&text=Playlist \'<?= $playlist->name; ?>\' admin page on @vlistus. <?= site_url($playlist->slug . '/' . $playlist->admin) ?>',
+						      'twitter-share-dialog',
+						      'width=450,height=550');
+						    return false;">Twitter</a></li>
+			<li><a href="#" onclick="
+						    window.open(
+						      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(' <?= site_url($playlist->slug . '/' . $playlist->admin) ?>'),
+						      'facebook-share-dialog',
+						      'width=626,height=436');
+						    return false;">Facebook</a></li>
+			<li><a href="#" onclick="
+						    window.open(
+						      'https://plus.google.com/share?url='+encodeURIComponent(' <?= site_url($playlist->slug . '/' . $playlist->admin) ?>'),
+						      'gplus-share-dialog',
+						      'width=480,height=436');
+						    return false;">Google +</a></li>
+			<li><a target="_blank" href="mailto:?subject=Playlist '<?= $playlist->name; ?>' admin page on vlistus&body=<?= site_url($playlist->slug . '/' . $playlist->admin) ?>" >Email</a></li>
 		</ul>
 	</section>
 	<section class="popup" id="collab-share">
 		<h2>Share your COLLAB URL</h2>
 		<input type="text" value="<?= site_url($playlist->slug . '/' . $playlist->collab) ?>">
 		<ul>
-			<li><a href="#">Twitter</a></li>
-			<li><a href="#">Facebook</a></li>
-			<li><a href="#">Google +</a></li>
-			<li><a href="#">Email</a></li>
+			<li><a href="#" onclick="
+						    window.open(
+						      'http://twitter.com/share?url='+encodeURIComponent(' <?= site_url($playlist->slug . '/' . $playlist->collab) ?>') + '&text=Playlist \'<?= $playlist->name; ?>\' collab page on @vlistus. <?= site_url($playlist->slug . '/' . $playlist->collab) ?>',
+						      'twitter-share-dialog',
+						      'width=450,height=550');
+						    return false;">Twitter</a></li>
+			<li><a href="#" onclick="
+						    window.open(
+						      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(' <?= site_url($playlist->slug . '/' . $playlist->collab) ?>'),
+						      'facebook-share-dialog',
+						      'width=626,height=436');
+						    return false;">Facebook</a></li>
+			<li><a href="#" onclick="
+						    window.open(
+						      'https://plus.google.com/share?url='+encodeURIComponent(' <?= site_url($playlist->slug . '/' . $playlist->collab) ?>'),
+						      'gplus-share-dialog',
+						      'width=480,height=436');
+						    return false;">Google +</a></li>
+			<li><a target="_blank" href="mailto:?subject=Playlist '<?= $playlist->name; ?>' collab page on vlistus&body=<?= site_url($playlist->slug . '/' . $playlist->collab) ?>" >Email</a></li>
 		</ul>
 	</section>
 	<section class="popup" id="play-share">
 		<h2>Share your PLAY URL</h2>
 		<input type="text" value="<?= site_url($playlist->slug) ?>">
 		<ul>
-			<li><a href="#">Twitter</a></li>
-			<li><a href="#">Facebook</a></li>
-			<li><a href="#">Google +</a></li>
-			<li><a href="#">Email</a></li>
+			<li><a href="#" onclick="
+						    window.open(
+						      'http://twitter.com/share?url='+encodeURIComponent(' <?= site_url($playlist->slug) ?>') + '&text=Check playlist \'<?= $playlist->name; ?>\' on @vlistus. <?= site_url($playlist->slug) ?>',
+						      'twitter-share-dialog',
+						      'width=450,height=550');
+						    return false;">Twitter</a></li>
+			<li><a href="#" onclick="
+						    window.open(
+						      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(' <?= site_url($playlist->slug) ?>'),
+						      'facebook-share-dialog',
+						      'width=626,height=436');
+						    return false;">Facebook</a></li>
+			<li><a href="#" onclick="
+						    window.open(
+						      'https://plus.google.com/share?url='+encodeURIComponent(' <?= site_url($playlist->slug) ?>'),
+						      'gplus-share-dialog',
+						      'width=480,height=436');
+						    return false;">Google +</a></li>
+			<li><a target="_blank" href="mailto:?subject=Playlist '<?= $playlist->name; ?>' on vlistus&body=<?= site_url($playlist->slug) ?>" >Email</a></li>
 		</ul>
 	</section>
 	<div class="overlay"></div>
