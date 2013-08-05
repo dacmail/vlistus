@@ -12,9 +12,9 @@
 		</section>
 	<? endif; ?>
 	<section id="urls">
-		<p class="url"><span class="icon-admin url-type">Admin</span> <a href="<?= site_url($playlist->slug . '/' . $playlist->admin); ?>" target="_blank"><?= ellipsize(site_url($playlist->slug . '/' . $playlist->admin),50, .5); ?></a> <a href="#" class="admin-share button">Share</a></p>
-		<p class="url"><span class="icon-collab url-type">Collab</span> <a href="<?= site_url($playlist->slug . '/' . $playlist->collab); ?>" target="_blank"><?= ellipsize(site_url($playlist->slug . '/' . $playlist->collab),50, .5); ?> <a href="#" class="collab-share button">Share</a></p>
-		<p class="url"><span class="icon-play url-type">Play</span> <a href="<?= site_url($playlist->slug); ?>" target="_blank"><?= ellipsize(site_url($playlist->slug),50, .5); ?> <a href="#" class="play-share button">Share</a></p>
+		<p class="url"><span class="icon-admin url-type">Admin</span> <a href="<?= site_url($playlist->slug . '/' . $playlist->admin); ?>" target="_blank"><?= ellipsize(site_url($playlist->slug . '/' . $playlist->admin),49, .5); ?></a> <a href="#" class="admin-share button">Share</a></p>
+		<p class="url"><span class="icon-collab url-type">Collab</span> <a href="<?= site_url($playlist->slug . '/' . $playlist->collab); ?>" target="_blank"><?= ellipsize(site_url($playlist->slug . '/' . $playlist->collab),49, .5); ?> <a href="#" class="collab-share button">Share</a></p>
+		<p class="url"><span class="icon-play url-type">Play</span> <a href="<?= site_url($playlist->slug); ?>" target="_blank"><?= ellipsize(site_url($playlist->slug),49, .5); ?> <a href="#" class="play-share button">Share</a></p>
 	</section>
 	<section id="preferences">
 		<form method="post" action="<?= site_url('playlists/update') ?>">

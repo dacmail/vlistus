@@ -13,7 +13,7 @@
 		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
 		  })();
 		</script>
-		<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fvlistus.com&amp;send=false&amp;layout=button_count&amp;width=300&amp;show_faces=true&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21&amp;appId=468142506573265" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:21px;" allowTransparency="true"></iframe>
+		<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com/vlistus&amp;send=false&amp;layout=button_count&amp;width=300&amp;show_faces=true&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21&amp;appId=468142506573265" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:21px;" allowTransparency="true"></iframe>
 		<p class="copy">Powered by <a href="http://ungrynerd.com">UNGRYNERD</a></p>
 		</div>
 	</footer>
