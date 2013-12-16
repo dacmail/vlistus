@@ -34,17 +34,14 @@
 		<aside class="step" id="step-1">
 			<span class="number">1</span>
 			<h2>Create</h2>
-			<p>Lorem ipsum dolor sit amet consequectum dolorem huisquo malver</p>
 		</aside>
 		<aside class="step" id="step-2">
 			<span class="number">2</span>
 			<h2>Share</h2>
-			<p>Lorem ipsum dolor sit amet consequectum dolorem huisquo malver</p>
 		</aside>
 		<aside class="step" id="step-3">
 			<span class="number">3</span>
 			<h2>Play</h2>
-			<p>Lorem ipsum dolor sit amet consequectum dolorem huisquo malver</p>
 		</aside>
 	</section>
 	<footer id="footer" class="clearfix">
