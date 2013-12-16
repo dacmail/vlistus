@@ -223,7 +223,7 @@
 			"file": "application/views/administration.php",
 			"settings":
 			{
-				"buffer_size": 3290,
+				"buffer_size": 6369,
 				"line_ending": "Unix"
 			}
 		},
@@ -271,7 +271,7 @@
 			"file": "application/views/includes/footer.php",
 			"settings":
 			{
-				"buffer_size": 1492,
+				"buffer_size": 1505,
 				"line_ending": "Unix"
 			}
 		},
@@ -279,7 +279,7 @@
 			"file": "application/views/home.php",
 			"settings":
 			{
-				"buffer_size": 3074,
+				"buffer_size": 3419,
 				"line_ending": "Unix"
 			}
 		},
@@ -287,7 +287,7 @@
 			"file": "application/views/includes/header.php",
 			"settings":
 			{
-				"buffer_size": 1526,
+				"buffer_size": 1891,
 				"line_ending": "Unix"
 			}
 		}
@@ -525,6 +525,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"50",
+			" . '/' . $playlist->admin",
+			"admin",
 			"450",
 			"\n",
 			"450",
@@ -649,10 +652,7 @@
 			"share",
 			"url",
 			"share_twitter",
-			"URL_TO_FIX",
-			"utf8_encode",
-			"var_dump",
-			"clean_text"
+			"URL_TO_FIX"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -707,7 +707,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 8,
 			"sheets":
 			[
 				{
@@ -715,15 +715,23 @@
 					"file": "application/views/administration.php",
 					"settings":
 					{
-						"buffer_size": 3290,
+						"buffer_size": 6369,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2204,
-								2204
+								703,
+								703
+							],
+							[
+								990,
+								990
+							],
+							[
+								1218,
+								1218
 							]
 						],
 						"settings":
@@ -775,8 +783,8 @@
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 1.0,
-						"translation.y": 0.0,
+						"translation.x": 1106.0,
+						"translation.y": 1.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -793,8 +801,8 @@
 						"selection":
 						[
 							[
-								10237,
-								10281
+								10249,
+								10250
 							]
 						],
 						"settings":
@@ -846,7 +854,7 @@
 							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
+						"translation.x": 7.0,
 						"translation.y": 8422.0,
 						"zoom_level": 1.0
 					},
@@ -1141,15 +1149,15 @@
 					"file": "application/views/includes/footer.php",
 					"settings":
 					{
-						"buffer_size": 1492,
+						"buffer_size": 1505,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1047,
-								1047
+								1099,
+								1099
 							]
 						],
 						"settings":
@@ -1201,7 +1209,7 @@
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 376.0,
+						"translation.x": 141.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
@@ -1212,19 +1220,15 @@
 					"file": "application/views/home.php",
 					"settings":
 					{
-						"buffer_size": 3074,
+						"buffer_size": 3419,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2721,
-								2721
-							],
-							[
-								2907,
-								2907
+								277,
+								541
 							]
 						],
 						"settings":
@@ -1276,7 +1280,7 @@
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 926.0,
+						"translation.x": 702.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
@@ -1287,15 +1291,15 @@
 					"file": "application/views/includes/header.php",
 					"settings":
 					{
-						"buffer_size": 1526,
+						"buffer_size": 1891,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								187,
-								187
+								1869,
+								1869
 							]
 						],
 						"settings":
@@ -1397,16 +1401,20 @@
 		"selected_items":
 		[
 			[
+				"hea",
+				"application/views/includes/header.php"
+			],
+			[
+				"header",
+				"application/views/includes/header.php"
+			],
+			[
 				"home",
 				"application/views/home.php"
 			],
 			[
 				"foot",
 				"application/views/includes/footer.php"
-			],
-			[
-				"hea",
-				"application/views/includes/header.php"
 			],
 			[
 				"sty",
@@ -1611,10 +1619,6 @@
 			[
 				"servi",
 				"application/controllers/services.php"
-			],
-			[
-				"header",
-				"application/views/includes/header.php"
 			],
 			[
 				"membe",

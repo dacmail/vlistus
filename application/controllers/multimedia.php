@@ -7,6 +7,7 @@ class Multimedia extends CI_Controller {
 		if ((!empty($playlist)) && ($playlist->collab == $this->input->post('collab'))) :
 			$url = prep_url($this->input->post('urls'));
 			if (vlistus_check_domain($url)) :
+				$url = prepare_url($url);
 				$media = Media::find('first',array('conditions' => array("url LIKE '" .  $url . "' AND playlist_id = ?", $playlist->id)));
 				if (empty($media)) :
 					$media = Media::create(array(
